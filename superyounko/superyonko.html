@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحة اليوتيوبر - قناة اليوتيوبر الخاصة بي. اهلا وسهلا بكم في قناتي! هنا بنقدم محتوى رائع وبناء في مجالات متعددة.">
+    <meta property="og:title" content="صفحة اليوتيوبر">
+    <meta property="og:description" content="اهلا وسهلا بكم في قناتي! هنا بنقدم محتوى رائع وبناء في مجالات متعددة.">
+    <meta property="og:image" content="profile.jpg">
+    <title>صفحة اليوتيوبر</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="superyonko.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Profile section styles */
+        .profile {
+            text-align: center;
+            padding: 50px 0;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Videos section styles */
+        .videos {
+            padding: 40px 0;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .videos h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .video-frame {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Social section styles */
+        .social {
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .social a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #6e8efb;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .social a {
+                font-size: 1.2em;
+            }
+
+            .video-frame iframe {
+                height: 250px;
+            }
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #222;
+            color: #ddd;
+        }
+        
+        body.dark-mode .profile, 
+        body.dark-mode .videos,
+        body.dark-mode .social,
+        body.dark-mode footer {
+            background-color: #333;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>superyonko</h1>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="toggleDarkMode" />
+                <label for="toggleDarkMode" class="toggle-label"></label>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile" role="contentinfo">
+            <img src="1671482080139.jpg" alt="صورة الملف الشخصي">
+            <h2>superyonko</h2>
+            <p>اهلا وسهلا بكم في قناتي! هنا بنقدم محتوى رائع وبناء في الانمي</p>
+        </section>
+
+        <section class="videos" role="region" aria-labelledby="video-section">
+            <h2 id="video-section">الفيديوهات</h2>
+            <div class="video-frame">
+                <iframe src="https://www.tiktok.com/embed/7392140874664267024?lang=ar" allowfullscreen></iframe>
+            </div>
+            <div class="video-frame">
+                <iframe src="https://www.tiktok.com/embed/7392661576223919377?lang=ar" allowfullscreen></iframe>
+            </div>
+            <!-- You can add more video frames here -->
+        </section>
+
+        <section class="social" role="navigation" aria-label="روابط مواقع التواصل الاجتماعي">
+            <a href="https://www.youtube.com/@superyonko9241" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@super_yonko?lang=ar" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@super_yonko?lang=ar" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 قناة اليوتيوبر الخاصة بي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="superypnko.js"></script>
+    <script>
+        const toggleDarkMode = document.getElementById('toggleDarkMode');
+        const body = document.body;
+
+        toggleDarkMode.addEventListener('change', () => {
+            if (toggleDarkMode.checked) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
